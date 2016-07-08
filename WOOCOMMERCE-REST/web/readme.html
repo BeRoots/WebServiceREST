@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WooCommerce RESTful service :: readme</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: grey">
+        <h1 style="padding: 10px; background-color: orange; border: 4px solid brown; border-radius: 15px; text-align: center;">WooCommerce RESTful service</h1>
+        <div style="min-height: 800px; background-color: orange; border: 4px solid brown; border-radius: 15px;">
+            <h2 style="padding: 0 0 10px 10px; border-bottom: 4px solid brown">README :</h2>        
+            <p style="padding: 10px">Welcome to WooCommerce RESTful service. This webservice is build to return custommers and newsletter subscribers of WooCommerce MySQL database for the NABALSY company.</p>
+            <h2 style="padding: 0 0 10px 10px; border-bottom: 4px solid brown">Documentation API :</h2>
+            <h3 style="padding: 0 0 0 10px;">REST client</h3>
+            <h4 style="padding: 0 0 0 10px;"><u>Methods :</u></h4>
+            <ul>
+                <li><b>@GET </b>( <b>/status</b>: String) ................................... Operating test method for the web service.</li>
+                <li><b>@GET </b>( <b>/version</b>: String) ................................. Method that returns the version of the web service.</li>
+                <li><b>@GET </b>( <b>/wc-users</b>: Object) ............................. Method that returns all customer information from a WooCommerce  database in a structured way, customer by customer (XML or JSON).</li>
+                <li><b>@GET </b>( <b>/wc-users/{id}</b>: Object) ...................... Method that returns all customer information from a WooCommerce  database in a structured way, for a specific id (XML or JSON).</li>
+                <li><b>@GET </b>( <b>/wc-users/{from}/{to}</b>: Object) ......... Method that returns all customer information from a WooCommerce  database in a structured way, from an id and to a number of results (XML or JSON).</li>
+                <li><b>@GET </b>( <b>/wc-users/count</b>: int) ......................... Method that returns the number of customers registred in a WooCommerce database.</li>
+                <li><b>@GET </b>( <b>/wysija-users</b>: Object) ....................... Method that returns all member information from a Wysija database in a structured way, customer by customer (XML or JSON))</li>
+                <li><b>@GET </b>( <b>/wysija-users/{id}</b>: Object) ................ Method that returns all customer information from a Wysija  database in a structured way, for a specific id (XML or JSON).</li>
+                <li><b>@GET </b>( <b>/wysija-users/{from}/{to}</b>: Object) ... Method that returns all customer information from a Wysija  database in a structured way, from an id and to a number of results (XML or JSON).</li>
+                <li><b>@GET </b>( <b>/wysija-users/count</b>: int) ................... Method that returns the number of customers registred in a Wysija database.</li>
+            </ul>
+            <h4 style="padding: 0 0 0 10px;"><u>Informations :</u></h4>
+            <ul>
+                <li><b>@GET index.html</b> ............................................ Home Page of this web service.</li>
+                <li><b>@GET readme.html</b> ........................................ Basic information page of this web service.</li>
+                <li><b>@GET documentation.html</b> ........................... Documentation of this web service.</li>
+            </ul>
+            <h4 style="padding: 0 0 0 10px;"><u>Documentation :</u></h4>
+            <p style="padding: 10px">See the <a href="http://localhost:8080/WOOCOMMERCE-REST/documentation.html">Documentation</a> page for more informations.</p>
+            <h2 style="padding: 0 0 10px 10px; border-bottom: 4px solid brown">LICENCE :</h2>
+            <p style="padding: 10px"><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" title="Creative Commons : Attribution-NonCommercial-ShareAlike 4.0 International" alt="Creative Commons : Attribution-NonCommercial-ShareAlike 4.0 International" /></a></p>
+        </div>
+    </body>
+</html>
